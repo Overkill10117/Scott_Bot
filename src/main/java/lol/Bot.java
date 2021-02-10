@@ -25,7 +25,7 @@ public class Bot {
         EventWaiter waiter = new EventWaiter();
 
         JDABuilder.createDefault(
-                System.get("TOKEN")
+                Config.get("token")
                
         )
                 .disableCache(EnumSet.of(

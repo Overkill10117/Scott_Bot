@@ -1,1 +1,1 @@
-Worker: java src/main/java/lol/Bot.java
+worker: java Bot

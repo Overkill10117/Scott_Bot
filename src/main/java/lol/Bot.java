@@ -25,11 +25,8 @@ public class Bot {
         EventWaiter waiter = new EventWaiter();
 
         JDABuilder.createDefault(
-                Config.get("token"),
-                GatewayIntent.GUILD_MEMBERS,
-                GatewayIntent.GUILD_MESSAGES,
-                GatewayIntent.GUILD_MESSAGE_REACTIONS,
-                GatewayIntent.GUILD_VOICE_STATES
+                System.get("token")
+               
         )
                 .disableCache(EnumSet.of(
                         CacheFlag.CLIENT_STATUS,

@@ -38,7 +38,7 @@ public class Bot {
                 ))
                 .enableCache(CacheFlag.VOICE_STATE)
                 .addEventListeners(new Listener(waiter), waiter)
-                .setActivity(Activity.watching("hello"))
+                .setActivity(Activity.watching("type $help hello"))
                 .build();
     }
 

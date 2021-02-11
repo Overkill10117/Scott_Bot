@@ -38,7 +38,7 @@ public class Listener extends ListenerAdapter {
 
         final TextChannel pleaseDontDoThisAtAll = dontDoThis.get(0);
 
-        final String useGuildSpecificSettingsInstead = String.format("Welcome %s to %s",
+        final String useGuildSpecificSettingsInstead = String.format("Hello, Welcome %s to %s",
                 event.getMember().getUser().getAsTag(), event.getGuild().getName());
 
         pleaseDontDoThisAtAll.sendMessage(useGuildSpecificSettingsInstead).queue();

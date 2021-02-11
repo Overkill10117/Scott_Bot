@@ -3,8 +3,7 @@ package lol;
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
 import lol.command.CommandContext;
 import lol.command.ICommand;
-import lol.command.commands.HelloCommand;
-import lol.command.commands.HelpCommand;
+import lol.command.commands.*;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 
 import javax.annotation.Nullable;
@@ -19,6 +18,9 @@ public class CommandManager {
     public CommandManager(EventWaiter waiter) {
         addCommand(new HelloCommand());
         addCommand(new HelpCommand(this));
+        addCommand(new GayIdentifiyer());
+        addCommand(new BoredCommand());
+        addCommand(new ScottCommand());
     }
 
     private void addCommand(ICommand cmd) {

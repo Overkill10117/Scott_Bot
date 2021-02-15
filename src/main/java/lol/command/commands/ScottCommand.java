@@ -36,8 +36,10 @@ public class ScottCommand implements ICommand {
                     .setColor(randomColor()).setThumbnail("https://images-ext-2.discordapp.net/external/B_9WyBOhrS_-KlpDE_JBzImk9EdmpCyZBzaIl7h6odE/https/cdn.discordapp.com/avatars/769178417463427082/c91a78868220ab1df5735ae967d7dded.png").setTimestamp(Instant.now())
                     .setFooter("Scott Info...", null);
 
-            embed.addField("Identity", "ID `"+"`769178417463427082"+
-                    "`Discrim `"+ "`4548`"+"\n", true);
+            embed.addField("Identity", "ID "+"`769178417463427082`"+
+                    "\n", true);
+
+            embed.addField("Discrim:", "`4548`"+"\n", true);
 
             embed.addField("Status", "🎮 "+" `"+"`\n"+
                     " Offline`"+"`\n", true);

@@ -21,6 +21,7 @@ public class CommandManager {
         addCommand(new GayIdentifiyer());
         addCommand(new BoredCommand());
         addCommand(new ScottCommand());
+        addCommand(new triviaCommand());
     }
 
     private void addCommand(ICommand cmd) {

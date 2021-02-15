@@ -1,6 +1,5 @@
 package lol.command.commands;
 
-import lol.Config;
 import lol.command.CommandContext;
 import lol.command.ICommand;
 import me.duncte123.botcommons.messaging.EmbedUtils;
@@ -22,6 +21,7 @@ public class GayIdentifiyer implements ICommand {
             ctx.getChannel().sendMessage(embe.build()).queue();
             return;
         }
+
         double meh = Math.random()*10;
 
         switch ((int) meh) {

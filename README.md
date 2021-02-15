@@ -7,6 +7,6 @@
 [patronLink]: https://patreon.com/DuncteBot
 [patronImage]: https://img.shields.io/badge/Donate-Patreon-orange.svg
 
-[![DiscordBots][hl]][hlLink] [![Support Guild][discordLink]
+[![DiscordBots][hl]][hlLink] [![Support Guild][discordLink]]
 # Hello-Bott
 says hello

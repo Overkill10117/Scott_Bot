@@ -6,6 +6,6 @@
 [inviteLink]: https://dunctebot.link/invite
 
 
-[![DiscordBots][hl]][hlLink] [![Support Guild][discord]][discordLink]
+[Invite][hl]][hlLink] [![Support Guild][discord]][discordLink]
 # Hello-Bott
 says hello

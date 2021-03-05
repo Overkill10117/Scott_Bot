@@ -25,7 +25,7 @@ public class Bot {
         EventWaiter waiter = new EventWaiter();
 
         JDABuilder.createDefault(
-                System.get("token"),
+                Config.get("token"),
                 GatewayIntent.GUILD_MEMBERS,
                 GatewayIntent.GUILD_MESSAGES,
                 GatewayIntent.GUILD_MESSAGE_REACTIONS,
@@ -38,7 +38,7 @@ public class Bot {
                 ))
                 .enableCache(CacheFlag.VOICE_STATE)
                 .addEventListeners(new Listener(waiter), waiter)
-                .setActivity(Activity.watching("type $help hello"))
+                .setActivity(Activity.watching("hello"))
                 .build();
     }
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 [hl]: ....
 [hlLink]: https://discord.com/api/oauth2/authorize?client_id=808933876432240670&permissions=8&scope=bot
@@ -9,3 +10,7 @@
 [Invite][hl]][hlLink] [![Support Guild][discord]][discordLink]
 # Hello-Bott
 says hello
+=======
+# Hello-Bot
+a bot that say hello only..............
+>>>>>>> origin/master

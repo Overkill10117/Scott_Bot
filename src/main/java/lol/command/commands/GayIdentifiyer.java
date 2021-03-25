@@ -1,9 +1,11 @@
 package lol.command.commands;
 
+import lol.Config;
 import lol.command.CommandContext;
 import lol.command.ICommand;
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.TextChannel;
 
 import java.awt.*;
@@ -11,19 +13,18 @@ import java.awt.*;
 public class GayIdentifiyer implements ICommand {
     @Override
     public void handle(CommandContext ctx) {
-        if (ctx.getMember().isOwner()){
-            final EmbedBuilder embe = EmbedUtils.defaultEmbed()
-                    .setDescription("YOU ARE MALE HAHAHAHAHAHA")
-                    .setTitle("GAY IDENTIFIER")
-                    .setFooter("lol 100% true")
-                    .setColor(Color.green)
-                    .setImage("https://images-ext-2.discordapp.net/external/phq2HA3yZ2Hs9Kb8FLxn-gR9-qf6p0LiHWzw9EnML04/https/pm1.narvii.com/6679/be8bb5c184ec060047b6bbb111327afcd69a1d43_hq.jpg?width=994&height=559");
-            ctx.getChannel().sendMessage(embe.build()).queue();
-            return;
-        }
+boolean owner = ctx.getMember().isOwner();
 
-        double meh = Math.random()*10;
-
+                if (ctx.getMember().getId().equals("766501021144711178")){
+                    final EmbedBuilder embea = EmbedUtils.defaultEmbed()
+                            .setDescription("YOU ARE MALE HAHAHAHAHAHA")
+                            .setTitle("GAY IDENTIFIER")
+                            .setFooter("lol 100% true")
+                            .setColor(Color.green)
+                            .setImage("https://images-ext-2.discordapp.net/external/phq2HA3yZ2Hs9Kb8FLxn-gR9-qf6p0LiHWzw9EnML04/https/pm1.narvii.com/6679/be8bb5c184ec060047b6bbb111327afcd69a1d43_hq.jpg?width=994&height=559");
+                    ctx.getChannel().sendMessage(embea.build()).queue();
+                    return;
+                }double meh = Math.random()*10;
         switch ((int) meh) {
             case 1:
                 final TextChannel channel = ctx.getChannel();
@@ -73,10 +74,10 @@ public class GayIdentifiyer implements ICommand {
                 return;
             case 6:
                 final EmbedBuilder emm = EmbedUtils.defaultEmbed()
-                .setDescription("`It is unknown the identifier can't identify you!!!`")
-                    .setTitle("GAY IDENTIFIER")
-                    .setFooter("lol 100% true")
-                    .setColor(Color.orange);
+                        .setDescription("`It is unknown the identifier can't identify you!!!`")
+                        .setTitle("GAY IDENTIFIER")
+                        .setFooter("lol 100% true")
+                        .setColor(Color.orange);
                 ctx.getChannel().sendMessage(emm.build()).queue();
                 return;
             default:
@@ -87,8 +88,9 @@ public class GayIdentifiyer implements ICommand {
                         .setColor(Color.red)
                         .setImage("https://images-ext-2.discordapp.net/external/phq2HA3yZ2Hs9Kb8FLxn-gR9-qf6p0LiHWzw9EnML04/https/pm1.narvii.com/6679/be8bb5c184ec060047b6bbb111327afcd69a1d43_hq.jpg?width=994&height=559");
                 ctx.getChannel().sendMessage(em.build()).queue();
+
+            }
         }
-    }
 
     @Override
     public String getName() {
@@ -97,6 +99,7 @@ public class GayIdentifiyer implements ICommand {
 
     @Override
     public String getHelp() {
-        return "gi [question]";
+        return "Identifies if you are gay" +
+                "Usage: to identify yourself just do $gi";
     }
 }

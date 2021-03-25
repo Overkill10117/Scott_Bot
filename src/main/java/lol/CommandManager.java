@@ -22,6 +22,7 @@ public class CommandManager {
         addCommand(new BoredCommand());
         addCommand(new ScottCommand());
         addCommand(new triviaCommand());
+        addCommand(new pollcommand());
     }
 
     private void addCommand(ICommand cmd) {
